@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  css: ['~/assets/css/tailwind.css'], // CSS 파일 경로
-  postcss: { // 이 부분을 추가하거나 확인합니다.
+  css: ['~/assets/css/tailwind.css'],
+  postcss: {
     plugins: {
-      tailwindcss: {},
+      tailwindcss: {}, // 여기에 tailwindcss 자체를 플러그인으로 지정
       autoprefixer: {},
     },
   },
